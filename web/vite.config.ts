@@ -1,0 +1,14 @@
+import { defineConfig } from 'vite';
+import plugin from '@vitejs/plugin-vue';
+
+// https://vitejs.dev/config/
+export default defineConfig({
+    plugins: [plugin()],
+    server: {
+        port: 54341,
+  },
+  build: {
+    outDir: '../Api/wwwroot',
+    emptyOutDir: true,
+  },
+})
